@@ -1,7 +1,7 @@
 # Automation_of_Creative_-SHifts_in_Translation
 # Codes for the project "Creativity in Translation" supervised by Dr. Ana Guerberof Arenas and Dr. Antonio Toral
 
-In this project, we explored if we can use the cosine distance of bilingual word pairs to automate if there are creative shifts happend, and the higher the cosine ditance is, the more deviation between the word pair is, so the more creativity during the transaltion is.  
+In this project, we explored if we can use the cosine distance of bilingual word pairs to automate if there are creative shifts (a target text that departs from the linguistic structure of the source text) happend, and the higher the cosine ditance is, the more deviation between the word pair is, so the more creativity during the transaltion is.  
 
 The codes should be combined with other tools, files and models, and the steps are listed below:
 1. Sentence-aligned Source Text and Target Text (Source language vs. Target language)
@@ -17,3 +17,6 @@ The codes should be combined with other tools, files and models, and the steps a
     1) As the input format for vecmap is EMB file, so I use the codes "(step5)turn_txt_to_EMB.ipynb" to get the EMB files
     2) But there are requirements for the input files of turning to EMB files. We need to add "'Number of tokens' 'dimensions'" at the first line of the txt file, and to get the number of tokens, we can use the codes "(step6)count_token.ipynb".
 6. Then we use "(step7)Query_dtstance.ipynb" to get the cosine distance between the aligned words, and visualize them as boxplot.
+
+Note:
+for backup files: "[backup]Count_average_length.ipynb" and "[backup]word_frequency.ipynb" are for getting the characteristics of the text; "[backup] Duplicate_list.ipynb" is in case for sentences with multiple annotated units, a unit pair a row, then there will be duplicate sentences; "[backup] Auto_get_word_pairs.ipynb" will be used when you have a list of the word order of the target words in a sentence in the source text, you can get the words and word pairs of the target words, and it will split the target word pairs and other word pairs in different list.
